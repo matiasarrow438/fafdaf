@@ -3,7 +3,7 @@
 <head>  
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Serena Williams DISSs</title>
+    <title>Serena Williams DISS</title>
     <style>
         body {
             margin: 0;
@@ -325,10 +325,10 @@
         <div class="speaker-section">
             <div class="title-text" style="position: absolute; top: 10%; left: 50%; transform: translateX(-50%); color: white; font-size: 36px; font-family: Arial, sans-serif; text-transform: uppercase; letter-spacing: 2px;">Serena Williams DISS Token</div>
             
-            <button class="ca-button" onclick="window.open('https://pump.fun/', '_blank')" style="top: 20%;">Pump.Fun</button>
-            <button class="ca-button" style="top: 27%; font-size: 14px; padding: 8px 16px;" onclick="showCopiedMessage()">Copy CA</button>
+            <button class="ca-button" onclick="window.open('https://pump.fun/CGiFJS6a8qw7htCchbmks8aXX58WUTmc6fgo4QiApump', '_blank')" style="top: 20%;">Pump.Fun</button>
+            <button class="ca-button" style="top: 27%; font-size: 14px; padding: 8px 16px;" onclick="copyCA()">Copy CA</button>
             
-            <div class="ca-text" style="top: 35%;">Official CA:</div>
+            <div class="ca-text" style="top: 35%;">Official CA: CGiFJS6a8qw7htCchbmks8aXX58WUTmc6fgo4QiApump</div>
             <div style="position: absolute; top: 75%; left: 15%; transform: translateX(-50%); text-align: center;">
                 <video class="serena-video" autoplay loop muted playsinline onclick="window.open('https://www.tiktok.com/t/ZP8YUyNbW/', '_blank')" style="cursor: pointer;">
                     <source src="images/serena2.mp4" type="video/mp4">
@@ -384,7 +384,7 @@
                     <a href="https://t.me/swdsol" target="_blank" class="card-link"></a>
                     <img src="images/telegram.png" alt="telegram" class="profile-pic">
                     <div class="streamer-info">
-                        <a href="https://t.me/swdsol" target="_blank" class="streamer-name">$SWD</a>
+                        <a href="https://t.me/swdsol" target="_blank" class="streamer-name">$serena</a>
                         <div class="streamer-platform">Telegram</div>
                         <div class="streamer-description">
                             Official Token Telegram
@@ -434,6 +434,11 @@
                 streamersSection.classList.remove('visible');
             }
         });
+
+        function copyCA() {
+            navigator.clipboard.writeText('CGiFJS6a8qw7htCchbmks8aXX58WUTmc6fgo4QiApump');
+            showCopiedMessage();
+        }
 
         function showCopiedMessage() {
             const message = document.getElementById('copiedMessage');
