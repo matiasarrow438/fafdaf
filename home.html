@@ -3,7 +3,7 @@
 <head>  
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Not Like Us</title>
+    <title>Serena Williams DISS</title>
     <style>
         body {
             margin: 0;
@@ -60,6 +60,25 @@
             animation: growShrink 3s ease-in-out infinite;
             opacity: 1;
             filter: brightness(1);
+        }
+
+        .serena-gif {
+            width: 400px;
+            height: 400px;
+            position: absolute;
+            top: 50%;
+            left: 80%;  /* Changed from 75% to 85% to move it more to the right */
+            transform: translate(-50%, -50%);
+        }
+
+        .serena-video {
+            width: 400px;
+            height: 400px;
+            position: absolute;
+            top: 50%;
+            left: 15%;
+            transform: translate(-50%, -50%);
+            object-fit: cover;
         }
 
         @keyframes growShrink {
@@ -270,9 +289,13 @@
 
     <div id="main-content">
         <div class="speaker-section">
-            <button class="ca-button" onclick="window.location.href='https://pump.fun/'" style="top: 10%;">Pump.Fun</button>
+            <button class="ca-button" onclick="window.open('https://pump.fun/', '_blank', 'width=800,height=600')" style="top: 10%;">Pump.Fun</button>
             <div class="ca-text" style="top: 20%;">Official CA:</div>
+            <video class="serena-video" autoplay loop muted playsinline>
+                <source src="images/serena2.mp4" type="video/mp4">
+            </video>
             <img src="images/jbl-speaker.png" alt="JBL Speaker" class="speaker">
+            <img src="images/serena1.gif" alt="Serena" class="serena-gif">
             <div class="scroll-indicator">
                 <div class="scroll-text">Scroll</div>
                 <div class="scroll-arrow">↓</div>
