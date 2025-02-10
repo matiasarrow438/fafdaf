@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<head>  
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JBL COIN</title>
+    <title>Not Like Us</title>
     <style>
         body {
             margin: 0;
@@ -26,6 +26,28 @@
             font-family: Arial, sans-serif;
             text-transform: uppercase;
             letter-spacing: 2px;
+        }
+
+        .ca-button {
+            position: absolute;
+            top: 20%;
+            left: 50%;
+            transform: translateX(-50%);
+            padding: 12px 24px;
+            background: #00ffff;
+            color: black;
+            border: none;
+            border-radius: 5px;
+            font-size: 18px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+
+        .ca-button:hover {
+            background: #66ffff;
+            transform: translateX(-50%) scale(1.05);
         }
 
         .speaker {
@@ -248,7 +270,8 @@
 
     <div id="main-content">
         <div class="speaker-section">
-            <div class="ca-text">Official CA:</div>
+            <button class="ca-button" onclick="window.location.href='https://pump.fun/'" style="top: 10%;">Pump.Fun</button>
+            <div class="ca-text" style="top: 20%;">Official CA:</div>
             <img src="images/jbl-speaker.png" alt="JBL Speaker" class="speaker">
             <div class="scroll-indicator">
                 <div class="scroll-text">Scroll</div>
@@ -257,47 +280,47 @@
         </div>
 
         <div class="streamers-section">
-            <div class="streamers-title">Streamers</div>
+            <div class="streamers-title">SOCIALS</div>
             <div class="streamers-grid">
                 <div class="streamer-card">
-                    <a href="https://www.tiktok.com/@thetimothyw" target="_blank" class="card-link"></a>
-                    <img src="images/profile1.jpeg" alt="TheTimothy" class="profile-pic">
+                    <a href="https://www.tiktok.com/@chill_ape_?lang=en" target="_blank" class="card-link"></a>
+                    <img src="images/profile1.jpg" alt="Tiktok" class="profile-pic">
                     <div class="streamer-info">
-                        <a href="https://www.tiktok.com/@thetimothyw" target="_blank" class="streamer-name">TheTimothy</a>
-                        <div class="streamer-platform">Tiktok • GOAT</div>
+                        <a href="https://www.tiktok.com/@chill_ape_?lang=en" target="_blank" class="streamer-name">JoeyyTrades</a>
+                        <div class="streamer-platform">Tiktok</div>
                         <div class="streamer-description">
-                           Expert In Memecoin Analysis
+                           We Will Pump The Coin ON TIKTOK!!
                         </div>
                     </div>
                 </div>
                 <div class="streamer-card">
-                    <a href="https://www.tiktok.com/@envox" target="_blank" class="card-link"></a>
-                    <img src="images/profile2.jpg" alt="Envox" class="profile-pic">
+                    <a href="https://discord.gg/94FNP7e5Kp" target="_blank" class="card-link"></a>
+                    <img src="images/discord.png" alt="Discord" class="profile-pic">
                     <div class="streamer-info">
-                        <a href="https://www.tiktok.com/@envox" target="_blank" class="streamer-name">Envox</a>
-                        <div class="streamer-platform">Tiktok • Grinder</div>
+                        <a href="https://discord.gg/94FNP7e5Kp" target="_blank" class="streamer-name">JoeeyTrades</a>
+                        <div class="streamer-platform">Discord</div>
                         <div class="streamer-description">
-                            Known to be lowk stupid but will pump the coin fs
+                            Join our community and get the latest updates on the coin
                         </div>
                     </div>
                 </div>
                 <div class="streamer-card">
-                    <img src="images/profile3.png" alt="Vye" class="profile-pic">
+                    <img src="images/twitter.png" alt="Twitter" class="profile-pic">
                     <div class="streamer-info">
-                        <div class="streamer-name">Vye</div>
-                        <div class="streamer-platform">Tiktok • NotHim</div>
+                        <div class="streamer-name">Twitter</div>
+                        <div class="streamer-platform">Discord</div>
                         <div class="streamer-description">
-                            Thinks hes 5 star but hes not (rust addict)
+                            Official Token Twitter
                         </div>
                     </div>
                 </div>
                 <div class="streamer-card">
-                    <img src="images/profile4.jpg" alt="Sean" class="profile-pic">
+                    <img src="images/telegram.jpg" alt="telegram" class="profile-pic">
                     <div class="streamer-info">
-                        <div class="streamer-name">Sean</div>
-                        <div class="streamer-platform">Tiktok • D1 Rider</div>
+                        <div class="streamer-name">Telegram</div>
+                        <div class="streamer-platform">Telegram</div>
                         <div class="streamer-description">
-                            Neighbors with the 5 star streamer
+                            Official Token Telegram
                         </div>
                     </div>
                 </div>
@@ -305,7 +328,7 @@
         </div>
     </div>
 
-    <audio id="myAudio" src="audio/FettyWap.mp3" preload="auto"></audio>
+    <audio id="myAudio" src="audio/NotLikeUs.mp3" preload="auto"></audio>
 
     <script>
         const audio = document.getElementById('myAudio');
